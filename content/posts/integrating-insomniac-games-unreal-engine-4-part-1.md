@@ -82,15 +82,15 @@ I decided to give __IG-MemTrace__ a shot and see how the tool fares when integra
 
 The first time you launch MemTrace UI tool (C# listener) you are presented with a dialog to change default options, you must set the Trace Capture Directory before continuing:
 
-ccc
+![Set the Trace Capture Directory as required](/images/memtrace_options_3.webp)
 
 I also set up my Symbol Paths to the folders containing both the editor as well as the game executables as follows:
 
-ccc
+![Set the Symbol Paths as required](/images/memtrace_options_1.webp)
 
 Finally set the Bind Address to the IP of the machine on which you are running the tool:
 
-ccc
+![Set the Bind Address IP ](/images/memtrace_options_2.webp)
 
  
 ## Next Steps
