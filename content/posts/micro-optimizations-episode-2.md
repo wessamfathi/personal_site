@@ -1,7 +1,7 @@
 ---
 title: "Micro Optimizations Episode 2"
-date: 2022-04-02T00:38:15+02:00
-draft: true
+date: 2016-10-17T00:38:15+02:00
+draft: false
 ---
 
 # How NOT to loop

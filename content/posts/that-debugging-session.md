@@ -1,7 +1,7 @@
 ---
 title: "That Debugging Session"
-date: 2022-04-03T10:58:15+02:00
-draft: true
+date: 2016-11-06T10:58:15+02:00
+draft: false
 ---
 
 ## Disclaimer

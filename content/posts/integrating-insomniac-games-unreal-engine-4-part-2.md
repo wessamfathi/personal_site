@@ -1,7 +1,7 @@
 ---
 title: "Integrating Insomniac Games Unreal Engine 4 Part 2"
-date: 2022-04-03T11:06:53+02:00
-draft: true
+date: 2017-11-23T11:06:53+02:00
+draft: false
 ---
 
 Welcome to the second part of my series on integrating Insomniac Games MemTrace tool to Unreal Engine 4, if you have not read the first part, I recommend you do so here.

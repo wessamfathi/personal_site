@@ -1,7 +1,7 @@
 ---
 title: "Micro Optimizations Episode 1"
-date: 2022-04-02T00:23:08+02:00
-draft: true
+date: 2016-08-19T00:23:08+02:00
+draft: false
 ---
 
 Since I joined the Dreadnought team, I have been working almost exclusively on performance optimizations. For the PS4 platform, our game is CPU-bound, specifically on the game thread. To give you some background, we use Unreal Engine 4 which has 1 game thread, 1 render thread, plus some helper task graph threads (based on your settings and core-count).

@@ -1,7 +1,7 @@
 ---
 title: "Beginner Advice How to Get Into the Game Dev Industry"
-date: 2022-04-03T10:28:44+02:00
-draft: true
+date: 2017-08-16T10:28:44+02:00
+draft: false
 ---
 
 Many people have been asking me lately how to get into the game dev industry, so I thought I’d write a blog post about it so hopefully it reaches more people.
