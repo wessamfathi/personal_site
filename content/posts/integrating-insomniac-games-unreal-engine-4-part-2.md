@@ -8,21 +8,23 @@ Welcome to the second part of my series on integrating Insomniac Games MemTrace 
 
 In today’s post I will be discussing the code changes I did, including the base integration as well extra improvements I added on top, explain how to use MemTrace with UE4, and finally share my suggestions for future improvements. So let’s start!
 
+{{< toc >}}
+
 # Code Changes
 
 Make sure to first start by copying over files to your solution, you can check out how and where to copy files in part 1 here.
 
 The code changes required to get IG-MemTrace integrated with Unreal Engine were very compact. I am currently on version 4.13 and below are the changes I did:
 
-### Engine\Source\Runtime\Core\Core.Build.cs
+__Engine\Source\Runtime\Core\Core.Build.cs__
 
-_Add the following line to PublicIncludePaths_
+Add the following line to PublicIncludePaths
 
 ```
 "Runtime/Core/Public/IGMemTrace",
 ```
 
-_Add the following code to the end of the constructor_
+Add the following code to the end of the constructor
 
 ```	
 if ((Target.Platform == UnrealTargetPlatform.Win64))
@@ -35,9 +37,9 @@ if ((Target.Platform == UnrealTargetPlatform.Win64))
 }
 ```
 
-### Engine\Source\Runtime\Core\Private\HAL\MallocBinned.cpp
+__Engine\Source\Runtime\Core\Private\HAL\MallocBinned.cpp__
 
-_Add the following lines right after the includes_
+Add the following lines right after the includes
 
 ```	
 #if MEMTRACE_ENABLE
@@ -48,7 +50,7 @@ int32 FMallocBinned::m_OSAllocHeapId= 2;
 #endif // MEMTRACE_ENABLE
 ```
 
-_Add the following new function anywhere in the file_
+Add the following new function anywhere in the file
 
 ```	
 #if MEMTRACE_ENABLE
@@ -60,7 +62,7 @@ void FMallocBinned::InitializeHeaps()
 #endif // MEMTRACE_ENABLE
 ```
 
-_Make the following changes in FMallocBinned::Malloc()_
+Make the following changes in FMallocBinned::Malloc()
 
 ```	
 if( Size < BinnedSizeLimit )
@@ -105,7 +107,7 @@ else
 }
 ```
 
-_Make the following changes in FMallocBinned::Realloc()_
+Make the following changes in FMallocBinned::Realloc()
 
 ```	
 if( Ptr && NewSize )
@@ -119,7 +121,7 @@ if( Ptr && NewSize )
 }
 ```
 
-_Make the following changes in FMallocBinned::Free()_
+Make the following changes in FMallocBinned::Free()
 
 ```	
 ...
@@ -129,9 +131,9 @@ _Make the following changes in FMallocBinned::Free()_
     Private::PushFreeLockless(*this, Ptr);
 ```
 
-### Engine\Source\Runtime\Core\Public\HAL\MallocBinned.h
+__Engine\Source\Runtime\Core\Public\HAL\MallocBinned.h__
 
-_Make the following changes_
+Make the following changes
 
 ```	
     struct Private;
@@ -146,9 +148,9 @@ private: // <-- new
 #endif // MEMTRACE_ENABLE // <-- new
 ```
 
-### Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp
+__Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp__
 
-_Make the following changes right after the includes_
+Make the following changes right after the includes
 
 ```
 #if MEMTRACE_ENABLE // new
@@ -178,7 +180,7 @@ _To auto connect to the network listener on startup, I added the following to FE
 }
 ```
 
-_Make the following changes in the end of FEngineLoop::Exit()_
+Make the following changes in the end of FEngineLoop::Exit()
 
 ```	
 void FEngineLoop::Exit()
@@ -195,9 +197,9 @@ This way the game would connect to the network listener very early in the startu
 
 For example, I added the following exec function to the player controller class (or your own player controller if you override it, which is probably a better idea):
 
-### Engine\Source\Runtime\Engine\Classes\GameFramework\PlayerController.h
+__Engine\Source\Runtime\Engine\Classes\GameFramework\PlayerController.h__
 
-_Add the following function declaration_
+Add the following function declaration
 
 ```
 #if MEMTRACE_ENABLE
@@ -212,9 +214,9 @@ _Add the following function declaration_
 #endif // MEMTRACE_ENABLE
 ```
 
-### Engine\Source\Runtime\Engine\Private\PlayerController.cpp
+__Engine\Source\Runtime\Engine\Private\PlayerController.cpp__
 
-_Add the following code_
+Add the following code
 
 ```	
 #if MEMTRACE_ENABLE
@@ -239,9 +241,9 @@ void APlayerController::MemTraceUserMark(FString userMark)
 #endif // MEMTRACE_ENABLE
 ```
 
-### Engine\Source\Runtime\Core\Public\IGMemTrace\MemTrace.h
+__Engine\Source\Runtime\Core\Public\IGMemTrace\MemTrace.h__
 
-_Change the default MEMTRACE_ENABLE define to the following_
+Change the default MEMTRACE_ENABLE define to the following
 
 ```	
 #ifndef MEMTRACE_ENABLE
@@ -253,9 +255,9 @@ This way I could easily start memory tracing whenever I want, for example before
 
 By default I could only connect to MemTrace tool once per run, and have to restart the game to be able to connect again which is frustrating. The fix for this is a minor change:
 
-### Engine\Source\Runtime\Core\Private\IGMemTrace\MemTrace.cpp
+__Engine\Source\Runtime\Core\Private\IGMemTrace\MemTrace.cpp__
 
-_Add the following code_
+Add the following code
 
 ```	
 namespace MemTrace
@@ -356,7 +358,6 @@ This tool is useful to be able to track down who previously owned a piece of mem
 Input the address range you’re interested in and search. You’ll see a list of allocations that overlapped that range, sorted by lifetime. In order to see the callstack leading to Alloc / Free just hover over an item.
 
 
- 
 # Conclusion and Future Thoughts
 
 As you can see already MemTrace provides good overview of your heaps and allocators usage, and the game is kind of still playable while tracing which is a good plus. You could use MemTrace for profiling and optimizing your memory usage to decrease your memory consumption, and you could also use MemTrace for memory debugging in the case of a dreadful memory overwrite.
