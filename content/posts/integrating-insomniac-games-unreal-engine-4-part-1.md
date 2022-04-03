@@ -4,7 +4,11 @@ date: 2022-04-01T23:00:45+02:00
 draft: true
 ---
 
-[THIS](https://github.com/deplinenoise/ig-memtrace) is what I love the most about the game industry, it’s full of talented people who are always willing to share their experiences and tools to help benefit others in the same industry!
+[THIS](https://github.com/deplinenoise/ig-memtrace) is what I love the most about the game industry, it’s full of talented people who are always willing to share their experiences and tools to help benefit others in the same industry. There is a large amount of similar problems we all run into during game development. Hence, sharing tools and knowledge is useful for the whole community.
+
+{{< toc >}}
+
+# Overview
 
 To summarize, [Insomniac Games](https://www.insomniacgames.com/) are sharing __IG-MemTrace__ (their in-house memory tracing tool) with the rest of the world. __IG-MemTrace__ tool is split into two components, a __network listener__ app written in C#, this one you use to record, parse, and analyze traces, and a __C++ runtime component__ which should be integrated with the target code base.
 
