@@ -3,8 +3,59 @@ languageCode: en-us
 title: Tales of a Game Dev
 theme: "PaperMod"
 
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        menu:
+            main:
+                - name: Archive
+                  url: archives
+                  weight: 5
+                - name: Search
+                  url: search/
+                  weight: 10
+
+params:
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowToc: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+  homeInfoParams:
+    Title: Tales of a Game Dev
+    Content: >
+            Welcome to my personal website
+
+            - I post about game development, performance, and general programming.
+
+            - Follow me on Twitter!
+
+
+  socialIcons: # optional
+    - name: "Twitter"
+      url: "https://twitter.com/NoXGameDev"
+    - name: "GitHub"
+      url: "https://github.com/wessamfathi"
+
+
 markup:
   tableOfContents:
     endLevel: 3
     ordered: false
     startLevel: 1
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
