@@ -2,3 +2,9 @@ baseURL: https://wessam.dev/
 languageCode: en-us
 title: Tales of a Game Dev
 theme: "PaperMod"
+
+markup:
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 1
