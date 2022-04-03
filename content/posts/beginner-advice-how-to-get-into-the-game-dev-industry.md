@@ -16,12 +16,12 @@ Having good experience in one or more high level programming languages is very i
 If you don’t have game dev experience then try to work on something on your personal time, and try to focus on what is most relevant for the relevant job opening. Spend some time learning to use a specific game engine is a great advantage if it is used by the studio you target, or go ahead and build a proof of concept game, it doesn’t have to be commercial-grade but it shows you can think and take care of many things on top of programming.
 
  
-_I love making the fun in games and I want to work as a game programmer!_
+_I love making the fun in games and I want to work as a game programmer._
 
 Focus on making the most out of your time, for example if you want to apply to a gameplay programmer position, focus on learning that instead of, for example, building your own engine. Go ahead and download one of the already existing engines out there, Unreal or Unity engine for example. Use it to start building a small game. The game genre doesn’t matter; the important part is to have a game to play!
 
  
-_I love low-level programming; engine programmer is what I want to be!_
+_I love low-level programming; engine programmer is what I want to be._
 
 On the other hand, if you want to work as an engine programmer then change your plan accordingly: go ahead and choose a free game engine, download it, check the documentation and the source code. Start by learning and understanding the overall architecture as well as details of one specific system / component in the engine.
 
