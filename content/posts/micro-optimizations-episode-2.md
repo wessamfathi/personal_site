@@ -5,7 +5,7 @@ draft: false
 ---
 
 # How NOT to loop
-## Simple Problem…
+## Simple Problem
 
 Another optimization I tackled lately was a dynamic system to enable / disable other players’ weapon animation updates, based on distance to local player. To give you a bit of a context, there could be between 100 – 400 active weapons at the same time.
 

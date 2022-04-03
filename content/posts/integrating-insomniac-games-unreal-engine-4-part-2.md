@@ -2,13 +2,15 @@
 title: "Integrating Insomniac Games Unreal Engine 4 Part 2"
 date: 2017-11-23T11:06:53+02:00
 draft: false
+cover:
+    image: "/posts/images/mem2.webp"
+    alt: "Integrating Insomniac Games Unreal Engine 4 Part 2"
+    caption: "Integrating Insomniac Games Unreal Engine 4 Part 2"
 ---
 
 Welcome to the second part of my series on integrating Insomniac Games MemTrace tool to Unreal Engine 4, if you have not read the first part, I recommend you do so here.
 
 In today’s post I will be discussing the code changes I did, including the base integration as well extra improvements I added on top, explain how to use MemTrace with UE4, and finally share my suggestions for future improvements. So let’s start!
-
-{{< toc >}}
 
 # Code Changes
 

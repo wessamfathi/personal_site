@@ -2,6 +2,10 @@
 title: "Beginner Advice How to Get Into the Game Dev Industry"
 date: 2017-08-16T10:28:44+02:00
 draft: false
+cover:
+    image: "/posts/images/videogamecontrollers640.jpg"
+    alt: "Beginner Advice How to Get Into the Game Dev Industry"
+    caption: "Beginner Advice How to Get Into the Game Dev Industry"
 ---
 
 Many people have been asking me lately how to get into the game dev industry, so I thought I’d write a blog post about it so hopefully it reaches more people.
@@ -34,7 +38,4 @@ Great! Why not about do both? Go ahead and build two proof-of-concept games, one
 
 I believe if you could show your dedication and commitment, many companies would be happy to consider you for an application. Game development is passionate and fun, so showing passion is in my opinion a big step to reaching your goal. And you will have a lot of fun preparing for it as well 🙂
 
- 
-## Final words
-
-If you have questions about game / engine programming I am glad to help, here is a link to my [Twitter](https://twitter.com/NoXGameDev) account.
+Lastly, if you have questions about game / engine programming I am glad to help, here is a link to my [Twitter](https://twitter.com/NoXGameDev) account.

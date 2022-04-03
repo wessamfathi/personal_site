@@ -2,13 +2,15 @@
 title: "That Debugging Session"
 date: 2016-11-06T10:58:15+02:00
 draft: false
+cover:
+    image: "/posts/images/audio_device2.png"
+    alt: "That Debugging Session"
+    caption: "That Debugging Session"
 ---
 
 ## Disclaimer
 
 This post is not about performance optimizations, but I find it… interesting to say the least, and perhaps you’ll agree!
-
-![Out of video memory crash](/posts/images/audio_device2.png)
 
 ## What happened?
 

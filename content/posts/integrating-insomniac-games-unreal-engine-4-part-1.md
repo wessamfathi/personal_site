@@ -2,11 +2,13 @@
 title: "Integrating Insomniac Games Unreal Engine 4 Part 1"
 date: 2017-11-04T23:00:45+02:00
 draft: false
+cover:
+    image: "/posts/images/ram2.webp"
+    alt: "Integrating Insomniac Games Unreal Engine 4 Part 1"
+    caption: "Integrating Insomniac Games Unreal Engine 4 Part 1"
 ---
 
 [THIS](https://github.com/deplinenoise/ig-memtrace) is what I love the most about the game industry, it’s full of talented people who are always willing to share their experiences and tools to help benefit others in the same industry. There is a large amount of similar problems we all run into during game development. Hence, sharing tools and knowledge is useful for the whole community.
-
-{{< toc >}}
 
 # Overview
 

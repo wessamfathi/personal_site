@@ -38,8 +38,6 @@ USceneComponent::UpdateComponentToWorld()
 }
 ```
 
-This is how my eyes felt like ccc (yes I am inspired by Mike Acton here, and in many other places as well).
-
 What is wrong with this code? The main thing is that it ignores basic and simple facts:
 
 - The component’s owning world, and its net mode, never change during a component life time, these are set when a new map is loaded, before the components are even created, and never change until a new map is loaded (which implies destroying and re-creating all components).

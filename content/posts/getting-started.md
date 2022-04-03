@@ -2,6 +2,10 @@
 title: "Hugo - New Start"
 date: 2022-03-24T11:25:21+02:00
 draft: false
+cover:
+    image: "/posts/images/hugo-logo-wide.svg"
+    alt: "Hugo - New Start"
+    caption: "Hugo - New Start"
 ---
 
 I rebuilt my website from scratch using Hugo instead of using WordPress. On one side, to save some of the hosting costs. On the other side, I wasn't happy with the limitations imposed on me by WordPress.
