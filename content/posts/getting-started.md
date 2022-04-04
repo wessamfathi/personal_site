@@ -3,7 +3,7 @@ title: "Hugo - New Start"
 date: 2022-03-24T11:25:21+02:00
 draft: false
 cover:
-    image: "/posts/images/hugo-logo-wide.png"
+    image: "/posts/images/hugo-logo-wide.jpg"
     alt: "Hugo - New Start"
     caption: "Hugo - New Start"
 ---
