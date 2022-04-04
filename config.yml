@@ -4,9 +4,8 @@ title: Tales of a Game Dev
 theme: "PaperMod"
 
 module:
-  module.imports:
-    path: "github.com/adityatelange/hugo-PaperMod"
-    disable: false
+  imports:
+  - path: "github.com/adityatelange/hugo-PaperMod"
 
 languages:
     en:
