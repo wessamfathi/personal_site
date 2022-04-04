@@ -6,6 +6,8 @@ cover:
     image: "/posts/images/videogamecontrollers640.jpg"
     alt: "Beginner Advice How to Get Into the Game Dev Industry"
     caption: "Beginner Advice How to Get Into the Game Dev Industry"
+images:
+    - "/posts/images/videogamecontrollers640.jpg"
 ---
 
 Many people have been asking me lately how to get into the game dev industry, so I thought I’d write a blog post about it so hopefully it reaches more people.
