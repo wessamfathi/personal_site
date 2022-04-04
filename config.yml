@@ -3,6 +3,11 @@ languageCode: en-us
 title: Tales of a Game Dev
 theme: "PaperMod"
 
+module:
+  module.imports:
+    path: "github.com/adityatelange/hugo-PaperMod"
+    disable: false
+
 languages:
     en:
         languageName: "English"

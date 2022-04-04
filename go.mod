@@ -1,3 +1,3 @@
-module github.com/adityatelange/hugo-PaperMod
+module wessam-dev.onrender.com
 
 go 1.18
