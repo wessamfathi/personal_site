@@ -5,7 +5,6 @@ draft: false
 cover:
     image: "/posts/images/mem2.webp"
     alt: "Integrating Insomniac Games Unreal Engine 4 Part 2"
-    caption: "Integrating Insomniac Games Unreal Engine 4 Part 2"
 ---
 
 Welcome to the second part of my series on integrating Insomniac Games MemTrace tool to Unreal Engine 4, if you have not read the first part, I recommend you do so here.

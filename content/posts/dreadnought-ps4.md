@@ -5,7 +5,6 @@ draft: false
 cover:
     image: "/posts/images/dn_ps4.jpg"
     alt: "Dreadnought is on PlayStation 4"
-    caption: "Dreadnought is on PlayStation 4"
 ---
 
 Today is a special day, it’s just now that I can finally talk publicly about what I have been working on for the past year.

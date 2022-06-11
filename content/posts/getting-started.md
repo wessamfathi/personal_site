@@ -5,7 +5,6 @@ draft: false
 cover:
     image: "/posts/images/hugo-logo-wide.jpg"
     alt: "Hugo - New Start"
-    caption: "Hugo - New Start"
 ---
 
 I rebuilt my website from scratch using [Hugo](https://gohugo.io) instead of using WordPress. On one side, to save some of the hosting costs. On the other side, I wasn't happy with the limitations imposed on me by WordPress.

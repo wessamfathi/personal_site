@@ -5,7 +5,6 @@ draft: false
 cover:
     image: "/posts/images/audio_device2.png"
     alt: "That Debugging Session"
-    caption: "That Debugging Session"
 ---
 
 ## Disclaimer

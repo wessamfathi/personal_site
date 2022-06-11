@@ -5,7 +5,6 @@ draft: false
 cover:
     image: "/posts/images/million_boxes.jpg"
     alt: "The Case of a Million Collision Bodies"
-    caption: "The Case of a Million Collision Bodies"
 ---
 
 Recently I was looking into the performance of a game’s dedicated server, one problematic area was PhysX performance. To get an idea of how it was like, the average PhysX frame time for a 32-players game was around 80ms with spikes of over 400ms. A quick round of removing unneeded meshes helped, but we were still far from calling it a day.
