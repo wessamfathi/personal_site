@@ -7,7 +7,7 @@ cover:
     alt: "Unity CPU Profiler Window"
 ---
  
-Nothing's better than gaining 150ms per frame just by toggling a few checkboxes. Well, maybe gaining 200ms is better, but that's not the point.
+Nothing's better than gaining 160ms per frame just by toggling a few checkboxes. Well, maybe gaining 200ms is better, but that's not the point.
  
 In December 2021, I reviewed a first-person shooter mobile game from a well-known franchise. The game is developed for iOS and Android and uses Unity's new [Universal Rendering Pipeline (URP)](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.1/manual/index.html).
  
