@@ -21,6 +21,7 @@ languages:
                   weight: 10
 
 params:
+  author: "Wessam Ibrahim"
   ShowShareButtons: true
   ShowReadingTime: true
   ShowToc: true
