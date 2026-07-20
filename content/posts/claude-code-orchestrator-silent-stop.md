@@ -1,10 +1,13 @@
 ---
 title: "Why Your Claude Code Orchestrator Silently Stops Dispatching Subagents"
-date: 2026-07-21
+date: 2026-07-21T01:11:21+03:00
 draft: false
 slug: "claude-code-orchestrator-silently-stops-dispatching-subagents"
 description: "My orchestrator stopped dispatching subagents and never threw an error. The cause was where the file lived. The rule that caused it has since changed, but the failure mode hasn't."
 tags: ["claude-code", "ai-agents", "llm", "multi-agent"]
+cover:
+    image: "posts/images/multi-agents.png"
+    alt: "Dispatching subagents silently fails"
 ---
 
 The first version of [Suhail](https://github.com/wessamfathi/suhail), my Claude Code orchestrator, had a bug that never threw an error. The orchestrator was supposed to dispatch five role subagents per unit of work: researcher, planner, coder, reviewer, auditor. Instead, runs would "complete" with the orchestrator doing everything itself, inline, in one context window. No dispatch ever happened, and nothing in the transcript flagged it.
