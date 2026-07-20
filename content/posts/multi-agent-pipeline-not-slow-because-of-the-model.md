@@ -7,7 +7,7 @@ description: "I timed my Claude Code multi-agent pipeline at 22 minutes and blam
 tags: ["claude-code", "ai-agents", "llm", "developer-productivity"]
 cover:
     image: "/posts/images/suhail.png"
-    alt: "Unity CPU Profiler Window"
+    alt: "Suhail"
 ---
 
 I run [Suhail](https://github.com/wessamfathi/suhail), my own Claude Code orchestrator, against real repos most days. The first time I timed a full run (an indexer plus a trivial two-part plan), it took 22 minutes. My instinct was to blame the model: swap to a faster tier, shave a few seconds per call, ship it.
